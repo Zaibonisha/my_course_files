@@ -12,13 +12,6 @@ function App() {
   return (
     <div className="App">
       <StateTutorial />
-      <EffectTutorial />
-      <ReducerTutorial />
-      <ContextTutorial />
-      <ImperativeHandle />
-      <RefTutorial />
-      <MemoTutorial />
-      <CallBackTutorial />
     </div>
   );
 }
