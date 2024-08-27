@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Income and Expenses</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Income and Expenses Calculator</h1>
+  
+  <div class="form-group">
+    <label for="newIncomeName">New Income Name:</label>
+    <input type="text" id="newIncomeName">
+  </div>
+  <div class="form-group">
+    <label for="newIncomeAmount">New Income Amount:</label>
+    <input type="number" id="newIncomeAmount">
+  </div>
+  <div class="form-group">
+    <label>Is this income recurring?</label>
+    <input type="checkbox" id="newIncomeRecurring">
+  </div>
+  <button id="addIncomeBtn">Add New Income</button>
+  
+  <div class="form-group">
+    <label for="newExpenseName">New Expense Name:</label>
+    <input type="text" id="newExpenseName">
+  </div>
+  <div class="form-group">
+    <label for="newExpenseAmount">New Expense Amount:</label>
+    <input type="number" id="newExpenseAmount">
+  </div>
+  <div class="form-group">
+    <label>Is this expense recurring?</label>
+    <input type="checkbox" id="newExpenseRecurring">
+  </div>
+  <button id="addExpenseBtn">Add New Expense</button>
+  
+  <div class="result">
+    <h2>Calculations</h2>
+    <p>Total Income: <span id="totalIncome">0.00</span></p>
+    <p>Total Expenses: <span id="totalExpenses">0.00</span></p>
+    <p>Disposable Income: <span id="disposableIncome">0.00</span></p>
+    <div id="savingsSection" style="display: none;">
+      <div class="form-group">
+        <label for="savingsAmount">How much would you like to save?</label>
+        <input type="number" id="savingsAmount">
+      </div>
+      <button id="calculateSavingsBtn">Calculate Remaining Disposable Income</button>
+    </div>
+    <p id="remainingDisposableIncome" style="display: none;"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
